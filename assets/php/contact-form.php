@@ -2,7 +2,7 @@
 if ((isset($_POST['name'])) && (strlen(trim($_POST['name'])) > 0)) {
 	$name = stripslashes(strip_tags($_POST['name']));
 } else {$name = 'No name entered';}
-if ((isset($_POST['email'])) && (strlen(trim($_POST['email'])) > 0)) {
+if ((isset($_POST['email'])) && trim($_POST['email'])) {
 	$email = stripslashes(strip_tags($_POST['email']));
 } else {$email = 'No email entered';}
 if ((isset($_POST['message'])) && (strlen(trim($_POST['message'])) > 0)) {
